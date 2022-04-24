@@ -2,9 +2,9 @@
 
 Install and configure rsyslog on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-rsyslog/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-rsyslog/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-rsyslog/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-rsyslog)|[![quality](https://img.shields.io/ansible/quality/58234)](https://galaxy.ansible.com/buluma/rsyslog)|[![downloads](https://img.shields.io/ansible/role/d/58234)](https://galaxy.ansible.com/buluma/rsyslog)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-rsyslog.svg)](https://github.com/buluma/ansible-role-rsyslog/releases/)|
+|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|---------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-rsyslog/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-rsyslog/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-rsyslog/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-rsyslog)|[![quality](https://img.shields.io/ansible/quality/58234)](https://galaxy.ansible.com/buluma/rsyslog)|[![downloads](https://img.shields.io/ansible/role/d/58234)](https://galaxy.ansible.com/buluma/rsyslog)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-rsyslog.svg)](https://github.com/buluma/ansible-role-rsyslog/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-rsyslog.svg)](https://github.com/buluma/ansible-role-rsyslog/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-rsyslog.svg)](https://github.com/buluma/ansible-role-rsyslog/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -143,7 +143,7 @@ The following roles are used to prepare a system. You can prepare your system in
 
 ## [Context](#context)
 
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.co.ke/) for further information.
+This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
 
 Here is an overview of related roles:
 
@@ -179,6 +179,10 @@ Some roles can't run on a specific distribution or version. Here are some except
 
 
 If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-rsyslog/issues)
+
+## [Changelog](#changelog)
+
+[Role History](https://github.com/buluma/ansible-role-rsyslog/blob/master/CHANGELOG.md)
 
 ## [License](#license)
 
