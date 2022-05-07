@@ -4,6 +4,14 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/1.0.1...HEAD)
 
+**Implemented enhancements:**
+
+- Add some optional parameters and select dest to main rsyslog file [\#7](https://github.com/buluma/ansible-role-rsyslog/pull/7) ([buluma](https://github.com/buluma))
+
+**Closed issues:**
+
+- Add to tracker [\#3](https://github.com/buluma/ansible-role-rsyslog/issues/3)
+
 **Merged pull requests:**
 
 - Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#6](https://github.com/buluma/ansible-role-rsyslog/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
