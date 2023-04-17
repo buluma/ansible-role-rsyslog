@@ -59,6 +59,9 @@ rsyslog_remote_tcp: yes
 # If rsylog_remote is set, destination port to use.
 rsyslog_remote_port: 514
 
+# For TCP input filtering, use an BindRuleset. Default is undeclared.
+rsyslog_input_tcp_rule:
+
 # Set the mode for new directories; only available in legacy template.
 rsyslog_dircreatemode: "0700"
 
@@ -82,6 +85,24 @@ rsyslog_default_rules:
   - { rule: '*.emerg', logpath: ':omusrmsg:*' }
   - { rule: 'uucp,news.crit', logpath: '/var/log/spooler' }
   - { rule: 'local7.*', logpath: '/var/log/boot.log' }
+
+# Custom rsyslog rules
+# Example:
+# rsyslog_custom_rules:
+#   - name: remote1
+#     content: |
+#     authpriv.* ?TmplAuthpriv
+#       *.info:mail.none;authpriv.none;cron.none ?TmplMsg
+rsyslog_custom_rules: {}
+
+# Custom rsyslog templates
+# Example:
+# rsyslog_custom_templates:
+#   - name: TmplAuthpriv
+#     content: "/var/log/remote/auth/%HOSTNAME%/%PROGRAMNAME:::secpath-replace%.log"
+#   - name: Tmplmsg
+#     content: "/var/log/remote/msg/%HOSTNAME%/%PROGRAMNAME:::secpath-replace%.log"
+rsyslog_custom_templates: {}
 
 # Use the (obsolete) legacy, pre-v6 configuration file format, or the more
 # modern # 'advanced' configuration file format available in v6 and up. The

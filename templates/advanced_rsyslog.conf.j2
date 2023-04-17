@@ -4,6 +4,27 @@
 # For more information install rsyslog-doc and see
 # /usr/share/doc/rsyslog-doc/html/configuration/index.html
 
+##########################
+#### CUSTOM TEMPLATES ####
+##########################
+
+{% if rsyslog_custom_templates is defined %}
+{% for item in rsyslog_custom_templates %}
+$template {{ item.name }}, "{{ item.content }}"
+{% endfor %}
+{% endif %}
+
+######################
+#### CUSTOM RULES ####
+######################
+
+{% if rsyslog_custom_rules is defined %}
+{% for item in rsyslog_custom_rules %}
+$RuleSet {{ item.name }}
+  {{ item.content }}
+{% endfor %}
+{% endif %}
+$RuleSet RSYSLOG_DefaultRuleset
 
 #################
 #### MODULES ####
@@ -33,6 +54,9 @@
 
 # provides TCP syslog reception
 {{ '' if rsyslog_receiver else '#' }}module(load="imtcp") # needs to be done just once
+{% if rsyslog_input_tcp_rule is defined %}
+$InputTCPServerBindRuleset {{ rsyslog_input_tcp_rule }}
+{% endif %}
 {{ '' if rsyslog_receiver else '#' }}input(type="imtcp" port="514")
 
 ###########################
