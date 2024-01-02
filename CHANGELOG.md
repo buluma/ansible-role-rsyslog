@@ -1,11 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-rsyslog/tree/HEAD)
+## [1.0.2](https://github.com/buluma/ansible-role-rsyslog/tree/1.0.2) (2023-04-17)
 
-[Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/1.0.1...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/1.0.1...1.0.2)
 
 **Implemented enhancements:**
 
+- add custom templates and rules [\#14](https://github.com/buluma/ansible-role-rsyslog/pull/14) ([starfoxx82](https://github.com/starfoxx82))
 - Add some optional parameters and select dest to main rsyslog file [\#7](https://github.com/buluma/ansible-role-rsyslog/pull/7) ([buluma](https://github.com/buluma))
 
 **Closed issues:**
@@ -14,7 +15,6 @@
 
 **Merged pull requests:**
 
-- add custom templates and rules [\#14](https://github.com/buluma/ansible-role-rsyslog/pull/14) ([starfoxx82](https://github.com/starfoxx82))
 - Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#6](https://github.com/buluma/ansible-role-rsyslog/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [1.0.1](https://github.com/buluma/ansible-role-rsyslog/tree/1.0.1) (2022-03-28)
