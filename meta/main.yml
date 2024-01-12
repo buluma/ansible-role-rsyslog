@@ -5,7 +5,7 @@ galaxy_info:
   description: Install and configure rsyslog on your system.
   license: Apache-2.0
   company: ShadowNet
-  min_ansible_version: "2.10"
+  min_ansible_version: "2.12"
 
   platforms:
     - name: Alpine
@@ -17,6 +17,7 @@ galaxy_info:
     - name: EL
       versions:
         - "8"
+        - "9"
     - name: Debian
       versions:
         - all
@@ -34,5 +35,6 @@ galaxy_info:
     - rsyslog
     - installer
     - package
+    - monitoring
 
 dependencies: []
