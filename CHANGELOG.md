@@ -6,6 +6,7 @@
 
 **Closed issues:**
 
+- rebuild action [\#16](https://github.com/buluma/ansible-role-rsyslog/issues/16)
 - add to tracker [\#5](https://github.com/buluma/ansible-role-rsyslog/issues/5)
 
 ## [1.0.2](https://github.com/buluma/ansible-role-rsyslog/tree/1.0.2) (2023-04-17)
