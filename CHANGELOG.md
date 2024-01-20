@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-rsyslog/tree/HEAD)
+## [1.1.0](https://github.com/buluma/ansible-role-rsyslog/tree/1.1.0) (2024-01-12)
 
-[Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/1.0.2...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/1.0.2...1.1.0)
 
 **Closed issues:**
 
