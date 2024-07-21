@@ -56,7 +56,7 @@
     validate: "{{ 'rsyslogd -N1 -f %s' if item.value.validate | default(false) else 'true %s' }}"
     owner: root
     group: root
-    mode: 0440
+    mode: "0440"
   with_dict: "{{ rsyslog_rsyslog_d_files }}"
   when:
     - item.value.state | default('present') == 'present'
