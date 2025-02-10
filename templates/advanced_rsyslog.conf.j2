@@ -67,8 +67,7 @@ $InputTCPServerBindRuleset {{ rsyslog_input_tcp_rule }}
 # Use traditional timestamp format.
 # To enable high precision timestamps, comment out the following line.
 #
-module(load="builtin:omfile" Template="RSYSLOG_TraditionalFileFormat")
-
+{{ '' if rsyslog_traditional_file_format else '#' }}module(load="builtin:omfile" Template="RSYSLOG_TraditionalFileFormat")
 #
 # Set the default permissions for all log files.
 #
