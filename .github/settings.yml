@@ -5,4 +5,4 @@
 repository:
   description: Install and configure rsyslog on your system.
   homepage: https://buluma.github.io/
-  topics: rsyslog, installer, package, monitoring, ansible, molecule, tox, playbook
+  topics: rsyslog, installer, package, monitoring, ansible, molecule, playbook
