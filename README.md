@@ -82,13 +82,13 @@ rsyslog_deploy_default_config: true
 
 # Default rsyslogd rules
 rsyslog_default_rules:
-  - { rule: '*.info;mail.none;authpriv.none;cron.none', logpath: '/var/log/messages' }
-  - { rule: 'authpriv.*', logpath: '/var/log/secure' }
-  - { rule: 'mail.*', logpath: '-/var/log/maillog' }
-  - { rule: 'cron.*', logpath: '/var/log/cron' }
-  - { rule: '*.emerg', logpath: ':omusrmsg:*' }
-  - { rule: 'uucp,news.crit', logpath: '/var/log/spooler' }
-  - { rule: 'local7.*', logpath: '/var/log/boot.log' }
+  - { rule: "*.info;mail.none;authpriv.none;cron.none", logpath: "/var/log/messages" }
+  - { rule: "authpriv.*", logpath: "/var/log/secure" }
+  - { rule: "mail.*", logpath: "-/var/log/maillog" }
+  - { rule: "cron.*", logpath: "/var/log/cron" }
+  - { rule: "*.emerg", logpath: ":omusrmsg:*" }
+  - { rule: "uucp,news.crit", logpath: "/var/log/spooler" }
+  - { rule: "local7.*", logpath: "/var/log/boot.log" }
 
 # Use the (obsolete) legacy, pre-v6 configuration file format, or the more
 # modern # 'advanced' configuration file format available in v6 and up. The
@@ -120,7 +120,6 @@ rsyslog_preservefqdn: false
 #                              port="514"
 #                              protocol="tcp")
 rsyslog_rsyslog_d_files: []
-
 # Avoid sd_journal_get_cursor() failed: Cannot assign requested address messages
 # due to logrotate
 rsyslog_workaroundjournalbug: false
@@ -134,7 +133,6 @@ rsyslog_imuxsock_syssock: false
 #   - gnutls
 #   - elastisearch
 rsyslog_features: []
-
 # Default destination of rsyslog config file
 rsyslog_dest_conf_file: "/etc/rsyslog.conf"
 
