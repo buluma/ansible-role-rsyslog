@@ -1,11 +1,11 @@
 ---
-- name: Converge
-  hosts: all
-  become: true
-  gather_facts: true
+  - name: Converge
+    hosts: all
+    become: true
+    gather_facts: true
 
-  roles:
-    - role: buluma.rsyslog
-      vars:
-        rsyslog_traditional_file_format: false
-        rsyslog_omit_local_logging: false
+    roles:
+      - role: buluma.rsyslog
+        vars:
+          rsyslog_traditional_file_format: false
+          rsyslog_omit_local_logging: false
