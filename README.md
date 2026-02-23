@@ -12,29 +12,29 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-  - name: Converge
-    hosts: all
-    become: true
-    gather_facts: true
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: true
 
-    roles:
-      - role: buluma.rsyslog
-        vars:
-          rsyslog_traditional_file_format: false
-          rsyslog_omit_local_logging: false
+  roles:
+  - role: buluma.rsyslog
+    vars:
+      rsyslog_traditional_file_format: false
+      rsyslog_omit_local_logging: false
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-rsyslog/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-  - name: Prepare
-    hosts: all
-    become: true
-    gather_facts: false
+- name: Prepare
+  hosts: all
+  become: true
+  gather_facts: false
 
-    roles:
-      - role: buluma.bootstrap
+  roles:
+  - role: buluma.bootstrap
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -74,21 +74,21 @@ rsyslog_filecreatemode: "0644"
 
 # Set the mods enabled
 rsyslog_mods:
-  - imuxsock
-  - imjournal
+- imuxsock
+- imjournal
 
 # Configure rsyslog minimally (may be in conflict with custom configuration files)
 rsyslog_deploy_default_config: true
 
 # Default rsyslogd rules
 rsyslog_default_rules:
-  - {rule: "*.info;mail.none;authpriv.none;cron.none", logpath: "/var/log/messages"}
-  - {rule: "authpriv.*", logpath: "/var/log/secure"}
-  - {rule: "mail.*", logpath: "-/var/log/maillog"}
-  - {rule: "cron.*", logpath: "/var/log/cron"}
-  - {rule: "*.emerg", logpath: ":omusrmsg:*"}
-  - {rule: "uucp,news.crit", logpath: "/var/log/spooler"}
-  - {rule: "local7.*", logpath: "/var/log/boot.log"}
+- {rule: "*.info;mail.none;authpriv.none;cron.none", logpath: "/var/log/messages"}
+- {rule: "authpriv.*", logpath: "/var/log/secure"}
+- {rule: "mail.*", logpath: "-/var/log/maillog"}
+- {rule: "cron.*", logpath: "/var/log/cron"}
+- {rule: "*.emerg", logpath: ":omusrmsg:*"}
+- {rule: "uucp,news.crit", logpath: "/var/log/spooler"}
+- {rule: "local7.*", logpath: "/var/log/boot.log"}
 
 # Use the (obsolete) legacy, pre-v6 configuration file format, or the more
 # modern # 'advanced' configuration file format available in v6 and up. The
