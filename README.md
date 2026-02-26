@@ -74,21 +74,21 @@ rsyslog_filecreatemode: "0644"
 
 # Set the mods enabled
 rsyslog_mods:
-- imuxsock
-- imjournal
+  - imuxsock
+  - imjournal
 
 # Configure rsyslog minimally (may be in conflict with custom configuration files)
 rsyslog_deploy_default_config: true
 
 # Default rsyslogd rules
 rsyslog_default_rules:
-- {rule: "*.info;mail.none;authpriv.none;cron.none", logpath: "/var/log/messages"}
-- {rule: "authpriv.*", logpath: "/var/log/secure"}
-- {rule: "mail.*", logpath: "-/var/log/maillog"}
-- {rule: "cron.*", logpath: "/var/log/cron"}
-- {rule: "*.emerg", logpath: ":omusrmsg:*"}
-- {rule: "uucp,news.crit", logpath: "/var/log/spooler"}
-- {rule: "local7.*", logpath: "/var/log/boot.log"}
+  - { rule: "*.info;mail.none;authpriv.none;cron.none", logpath: "/var/log/messages" }
+  - { rule: "authpriv.*", logpath: "/var/log/secure" }
+  - { rule: "mail.*", logpath: "-/var/log/maillog" }
+  - { rule: "cron.*", logpath: "/var/log/cron" }
+  - { rule: "*.emerg", logpath: ":omusrmsg:*" }
+  - { rule: "uucp,news.crit", logpath: "/var/log/spooler" }
+  - { rule: "local7.*", logpath: "/var/log/boot.log" }
 
 # Use the (obsolete) legacy, pre-v6 configuration file format, or the more
 # modern # 'advanced' configuration file format available in v6 and up. The
