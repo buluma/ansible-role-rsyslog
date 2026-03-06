@@ -36,7 +36,8 @@ rsyslog_deploy_default_config: true
 
 # Default rsyslogd rules
 rsyslog_default_rules:
-  - { rule: "*.info;mail.none;authpriv.none;cron.none", logpath: "/var/log/messages" }
+  - rule: "*.info;mail.none;authpriv.none;cron.none"
+    logpath: "/var/log/messages"
   - { rule: "authpriv.*", logpath: "/var/log/secure" }
   - { rule: "mail.*", logpath: "-/var/log/maillog" }
   - { rule: "cron.*", logpath: "/var/log/cron" }
