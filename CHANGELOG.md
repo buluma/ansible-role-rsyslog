@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-rsyslog/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/26.6.0...HEAD)
+
+**Implemented enhancements:**
+
+- Send to multiple remote endpoints [\#26](https://github.com/buluma/ansible-role-rsyslog/issues/26)
+
 ## [26.6.0](https://github.com/buluma/ansible-role-rsyslog/tree/26.6.0) (2026-06-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/24.3.31...26.6.0)
