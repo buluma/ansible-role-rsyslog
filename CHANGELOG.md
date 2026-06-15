@@ -8,6 +8,10 @@
 
 - Send to multiple remote endpoints [\#26](https://github.com/buluma/ansible-role-rsyslog/issues/26)
 
+**Merged pull requests:**
+
+- Comment out TraditionalFileFormat if false [\#27](https://github.com/buluma/ansible-role-rsyslog/pull/27) ([milaflq](https://github.com/milaflq))
+
 ## [26.6.0](https://github.com/buluma/ansible-role-rsyslog/tree/26.6.0) (2026-06-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/24.3.31...26.6.0)
