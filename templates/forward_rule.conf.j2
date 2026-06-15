@@ -23,6 +23,9 @@
 
 {% if rsyslog_remote is defined and rsyslog_config_file_format == 'advanced' %}
 # ### sample forwarding rule ###
+{% if 'action(' in rsyslog_remote %}
+{{ rsyslog_remote }}
+{% else %}
 action(type="omfwd"
 # # An on-disk queue is created for this action. If the remote host is
 # # down, messages are spooled to disk and sent when it is up again.
@@ -35,4 +38,5 @@ action(type="omfwd"
 # # remote_host is: name/ip, e.g. 192.168.0.1, port optional e.g. 10514
 #Target="remote_host" Port="XXX" Protocol="tcp")
 Target="{{ rsyslog_remote }}" Port="{{ rsyslog_remote_port }}" Protocol="{{ 'tcp' if rsyslog_remote_tcp else 'udp' }}" {{ '' if not rsyslog_remote_template else 'template="' + rsyslog_remote_template + '"' }} KeepAlive="on")
+{% endif %}
 {% endif %}
