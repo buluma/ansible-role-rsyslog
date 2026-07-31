@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-rsyslog/tree/HEAD)
+## [26.6.1](https://github.com/buluma/ansible-role-rsyslog/tree/26.6.1) (2026-07-25)
 
-[Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/26.6.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/26.6.0...26.6.1)
 
 **Implemented enhancements:**
 
