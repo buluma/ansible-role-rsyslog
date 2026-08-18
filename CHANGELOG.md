@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-rsyslog/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/26.6.1...HEAD)
+
+**Merged pull requests:**
+
+- Bump ansible/ansible-lint from 26.6.0 to 26.8.0 [\#36](https://github.com/buluma/ansible-role-rsyslog/pull/36) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [26.6.1](https://github.com/buluma/ansible-role-rsyslog/tree/26.6.1) (2026-07-25)
 
 [Full Changelog](https://github.com/buluma/ansible-role-rsyslog/compare/26.6.0...26.6.1)
