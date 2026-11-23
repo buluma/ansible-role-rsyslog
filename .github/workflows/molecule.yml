@@ -45,6 +45,10 @@ jobs:
       matrix:
         distro:
           - image: "docker-molecule-images"
+            tag: "rockylinux10"
+          - image: "docker-molecule-images"
+            tag: "almalinux10"
+          - image: "docker-molecule-images"
             tag: "rockylinux9"
           - image: "docker-molecule-images"
             tag: "almalinux9"
@@ -90,7 +94,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip3 install ansible molecule molecule-plugins[docker] docker
+          pip3 install "ansible==15.0.0" "molecule==26.11.0" "molecule-plugins[docker]==26.11.0" "docker==7.2.0"
 
       - name: Test with molecule
         run: |
