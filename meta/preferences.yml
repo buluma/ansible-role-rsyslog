@@ -4,7 +4,6 @@
 platforms:
   - name: EL
     versions:
-      - "10"
       - "9"
   - name: Debian
     versions:
